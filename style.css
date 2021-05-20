@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navbar{
+    background: #222222;
+    display: flex;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    color: white;
+    justify-content: space-between;
+    padding: 0px 20px;
+    width: 100%;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px 100px;
+}
+
+.btn{
+    background-color: lightskyblue;
+    box-shadow: black 3px 3px 3px;
+    color: white;
+    border: black solid 2px;
+    height: 30px;
+    width: 80px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.nav-links li a{
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links li{
+    list-style: none;
+    padding: 0px 10px;
+}
+
+
+
+.main-column{
+    flex: 3;
+    height: 900px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 400px;
+}
+
+
+
+
+
+
+/* CSS specifically for UserCard begins here */
+
+.card{
+    margin: 10px 0px;
+    height: 370px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+#toprow{
+    width: 100%;
+    background-color: teal;
+    height: 100px;
+    flex: 1;
+}
+
+
+.profileinfo{
+    width: 100%;
+    background-color: transparent;
+    height: 150px;
+    position: absolute;
+    top: -80px;
+}
+
+
+#profilepic{
+    height: 120px;
+    border-radius: 50%;
+}
+
+.infocollector{
+    display: grid;
+    width: 700px;
+    flex: 2.7;
+    position: relative;
+}
+
+.profileinfo h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 48pt;
+    position: absolute;
+    top: 100px;
+}
+
+.itemholder{
+    margin-left: 40px;
+}
+
+.itemholder p{
+    margin: 5px 0px;
+}
+
+.location-info{
+    display: flex;
+    justify-content: flex-start;
+    grid-row: 1;
+    margin: 80px 0px 0px 40px;
+    align-items: center;
+}
+
+.location-info img{
+    height: 40px;
+}
+
+.location-info p{
+    font-size: 24pt;
+    margin: 10px 5px;
+    color: magenta;
+}
+
+.descriptionholder{
+    grid-row: 2;
+}
+
+.profile-link{
+    grid-row: 3;
+    display: flex;
+    align-items: center;
+
+}
+
+
+.profile-link img{
+    height: 25px;
+}
+
+.profile-link p{
+    margin-left: 5px;
+}
+
+/* CSS related specifically for UserCard ends here*/
+
+
+.education{
+    width: 100%;
+    height: 50px;
+}
+
+.education-header{
+    display: block;
+    background-color: #222222;
+    height: 50px;
+    padding: 10px 0px;
+    padding-left: 40px;
+    text-align: left;
+    color: white;
+    font-size: 25pt;
+}
+
+.education-item{
+    margin: 10px;
+}
+
+.education-dates{
+    color: #333333;
+}
+
+.right-column{
+    flex: 2;
+    position: fixed;
+    top: 50px;
+    left: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+li{
+    list-style: none;
+}
+
+.connection-requests{
+    height: 180px;
+    width: 100%;
+}
+
+.connections-suggestions{
+    height: 300px;
+    width: 100%;
+    margin: 25px 0px;
+}
+
+
+
+.box-head{
+    display: flex;
+    background-color: #333333;
+    justify-content: space-between;
+    height: 40px;
+    align-items: center;
+    padding: 0px 20px 0px 15px;
+    color: white;
+}
+
+.connection-info{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 5px 10px;
+
+}
+
+.connection-icon{
+    height: 50px;
+    border-radius: 50%;
+}
+
+.connection-name{
+    font-size: 18pt;
+    margin-left: 10px;
+}
+
+
+.accept, .decline{
+    height: 50px;
+}
+
+.conn-reqs{
+    margin: 5px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.connection-requests-action{
+    padding: 0px 15px 0px 0px;
+}
+
+.notif-request{
+    background-color: orange;
+    border-radius: 50%;
+    text-align: center;
+    height: 60%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    line-height: 130%;
+}
+
+.item-displayer{
+    border: gray 3px solid;
+}
+
+.connections-suggestions{
+    margin: 20px 0px;
+}
+
+#view-more{
+    border-top: 0px;
+}
+
+.main-container{
+    display: flex;
+    width: 100%;
+}

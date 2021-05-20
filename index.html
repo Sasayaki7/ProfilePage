@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Profile</title>
+</head>
+<body>
+    <div class='navbar'>
+        <h1 class="nav-title">Profile</h1>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#" class="active">My Profile</a></li>
+            <li><a href="#">Find Connections</a></li>
+            <li><button class="btn">Sign Out</button></li>
+        </ul>
+    </div>
+    <div class='main-container'>
+        <div class='main-column'>
+            <div class='card'>
+                <div id='toprow'></div>
+                <div class='infocollector item-displayer'>
+                    <div class='profileinfo itemholder'>
+                        <img id='profilepic' src='images/jane-m.jpg' alt='Icon of person'>
+                        <h2>Sasa</h2>
+                    </div>
+                    <div class='location-info itemholder'>
+                        <img  src='icons/map-marker.png' alt='Map marker'>
+                        <p>Tokyo</p>
+                    </div>
+                    <div class='itemholder descriptionholder'>
+                        <p>Developer | Puzzle-Lover | Engineer</p>
+                        <p>Lorem ipsum</p>
+                    </div>
+                    <div class='profile-link itemholder'>
+                        <img src='icons\gear.png' alt='gear icon'>
+                        <p><a href='google.com/'>edit profile</a></p>
+                    </div>
+                </div>  
+            </div>
+            <div class='education'>
+                <div class='education-header'>Education</div>
+                <div class='education-container item-displayer'>
+                    <ul>
+                        <li>
+                            <div class='education-item'> 
+                                <h3>Coding Dojo - Full Stack Bootcamp</h3>
+                                <p class='education-dates'>Dec 2019 - Mar 2020</p>
+                                <p class='education-description'>Triple black belt in Python, MERN, and C#...</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class='education-item'> 
+                                <h3>4-Year University</h3>
+                                <p class='education-dates'>Sept 2014 - Dec 2016</p>
+                                <p class='education-description'>B.A. Physics.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class='right-column'>
+            <div class='connection-requests'>
+                <div class='box-head'>
+                    <p class='notif-request'>2</p>
+                    <p class='box-title'>Connection Requests</p>
+                </div>
+                <div class='connection-requests-container item-displayer'>
+                    <ul>
+                        <li>
+                            <div class='conn-reqs'>
+                                <div class='connection-info'>
+                                    <img class='connection-icon' src='images/todd-s.jpg' alt='Image of Todd E'>
+                                    <p class='connection-name'>Todd E</p>
+                                </div>
+                                <div class='connection-requests-action'>
+                                    <input type='image' class='accept' src='icons/accept-circle.png'>
+                                    <input type='image' class='decline' src='icons/close-circle.png'>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class='conn-reqs'>
+                                <div class='connection-info'>
+                                    <img class='connection-icon' src='images/phil-s.jpg' alt='Image of Phil K'>
+                                    <p class='connection-name'>Phil K</p>
+                                </div>
+                                <div class='connection-requests-action'>
+                                    <input type='image' class='accept' src='icons/accept-circle.png'>
+                                    <input type='image' class='decline' src='icons/close-circle.png'>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class='connections-suggestions'>
+                <div class='box-head'>
+                    <p class='notif-request'>500+</p>
+                    <p class='box-title'>Your Connections</p>
+                </div>
+                <div class='connections-suggestions-container item-displayer'>
+                    <ul>
+                        <li>
+                            <div class='connection-info'>
+                                <img class='connection-icon' src='images/adrien-s.jpg' alt='Image of Adrien D'>
+                                <p class='connection-name'>Adrien D</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class='connection-info'>
+                                <img class='connection-icon' src='images/anne-s.jpg' alt='Image of Anne J'>
+                                <p class='connection-name'>Anne J</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class='connection-info'>
+                                <img class='connection-icon' src='images/alayne-s.jpg' alt='Image of Alayne T'>
+                                <p class='connection-name'>Alayne T</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class='connection-info'>
+                                <img class='connection-icon' src='images/arry-s.jpg' alt='Image of Arry Y'>
+                                <p class='connection-name'>Arry Y</p>
+                            </div>
+                        </li>
+                    </ul>                
+                </div>
+                <div id='view-more' class='connections-suggestions-expand item-displayer'>
+                    <p><a href='#'>View More</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
