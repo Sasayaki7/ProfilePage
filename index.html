@@ -35,8 +35,8 @@
                         <p>Lorem ipsum</p>
                     </div>
                     <div class='profile-link itemholder'>
-                        <img src='icons\gear.png' alt='gear icon'>
-                        <p><a href='google.com/'>edit profile</a></p>
+                        <img onclick='change_identity()' src='icons\gear.png' alt='gear icon'>
+                        <p><a href='#'>edit profile</a></p>
                     </div>
                 </div>  
             </div>
@@ -65,7 +65,7 @@
         <div class='right-column'>
             <div class='connection-requests'>
                 <div class='box-head'>
-                    <p class='notif-request'>2</p>
+                    <p class='notif-request' id='connection-reqs'>2</p>
                     <p class='box-title'>Connection Requests</p>
                 </div>
                 <div class='connection-requests-container item-displayer'>
@@ -77,8 +77,8 @@
                                     <p class='connection-name'>Todd E</p>
                                 </div>
                                 <div class='connection-requests-action'>
-                                    <input type='image' class='accept' src='icons/accept-circle.png'>
-                                    <input type='image' class='decline' src='icons/close-circle.png'>
+                                    <input type='image' onclick="onaccept(this)" class='accept' src='icons/accept-circle.png'>
+                                    <input type='image' onclick="ondecline(this)" class='decline' src='icons/close-circle.png'>
                                 </div>
                             </div>
                         </li>
@@ -89,8 +89,8 @@
                                     <p class='connection-name'>Phil K</p>
                                 </div>
                                 <div class='connection-requests-action'>
-                                    <input type='image' class='accept' src='icons/accept-circle.png'>
-                                    <input type='image' class='decline' src='icons/close-circle.png'>
+                                    <input type='image' onclick="onaccept(this)" class='accept' src='icons/accept-circle.png'>
+                                    <input type='image' onclick="ondecline(this)" class='decline' src='icons/close-circle.png'>
                                 </div>
                             </div>
                         </li>
@@ -99,7 +99,7 @@
             </div>
             <div class='connections-suggestions'>
                 <div class='box-head'>
-                    <p class='notif-request'>500+</p>
+                    <p class='notif-request' id='connections'>583</p>
                     <p class='box-title'>Your Connections</p>
                 </div>
                 <div class='connections-suggestions-container item-displayer'>
@@ -136,6 +136,6 @@
             </div>
         </div>
     </div>
-
+    <script src='script.js'></script>
 </body>
 </html>

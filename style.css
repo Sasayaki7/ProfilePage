@@ -44,13 +44,21 @@
 
 
 
+
+.main-container{
+    display: flex;
+    width: 80%;
+    gap: 35px;
+    margin: auto;
+}
+
 .main-column{
     flex: 3;
     height: 900px;
-    position: absolute;
     display: flex;
     flex-direction: column;
-    left: 400px;
+    vertical-align: top;
+    
 }
 
 
@@ -94,9 +102,10 @@
 
 .infocollector{
     display: grid;
-    width: 700px;
+    width: 100%;
     flex: 2.7;
     position: relative;
+    box-sizing: border-box;
 }
 
 .profileinfo h2{
@@ -181,12 +190,11 @@
 
 .right-column{
     flex: 2;
-    position: fixed;
-    top: 50px;
-    left: 1200px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    vertical-align: top;
+    margin-top: 25px;
 }
 
 
@@ -270,9 +278,4 @@ li{
 
 #view-more{
     border-top: 0px;
-}
-
-.main-container{
-    display: flex;
-    width: 100%;
 }
